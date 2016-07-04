@@ -1,4 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="CartaCredito" representedClassName=".CartaCredito" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="importo" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contoCorrente" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContoCorrente" inverseName="listaCartaCredito" inverseEntity="ContoCorrente" syncable="YES"/>
+        <relationship name="listaMovimentoCarta" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MovimentoCarta" inverseName="cartaCredito" inverseEntity="MovimentoCarta" syncable="YES"/>
+    </entity>
+    <entity name="Causale" representedClassName=".Casuale" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listaMovimentoCarta" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MovimentoCarta" inverseName="causale" inverseEntity="MovimentoCarta" syncable="YES"/>
+        <relationship name="listaMovimentoConto" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MovimentoConto" inverseName="causale" inverseEntity="MovimentoConto" syncable="YES"/>
+    </entity>
+    <entity name="ContoCorrente" representedClassName=".ContoCorrente" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="importo" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listaCartaCredito" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CartaCredito" inverseName="contoCorrente" inverseEntity="CartaCredito" syncable="YES"/>
+        <relationship name="listaMovimentoConto" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MovimentoConto" inverseName="contoCorrente" inverseEntity="MovimentoConto" syncable="YES"/>
+        <relationship name="tipoConto" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TipoConto" inverseName="listaContoCorrente" inverseEntity="TipoConto" syncable="YES"/>
+    </entity>
+    <entity name="MovimentoCarta" representedClassName=".MovimentoCarta" syncable="YES">
+        <attribute name="dataMovimento" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="importo" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rendicontato" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="cartaCredito" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CartaCredito" inverseName="listaMovimentoCarta" inverseEntity="CartaCredito" syncable="YES"/>
+        <relationship name="causale" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Causale" inverseName="listaMovimentoCarta" inverseEntity="Causale" syncable="YES"/>
+    </entity>
+    <entity name="MovimentoConto" representedClassName=".MovimentoConto" syncable="YES">
+        <attribute name="dataMovimento" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="importo" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="causale" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Causale" inverseName="listaMovimentoConto" inverseEntity="Causale" syncable="YES"/>
+        <relationship name="contoCorrente" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContoCorrente" inverseName="listaMovimentoConto" inverseEntity="ContoCorrente" syncable="YES"/>
+    </entity>
+    <entity name="TipoConto" representedClassName=".TipoConto" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listaContoCorrente" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ContoCorrente" inverseName="tipoConto" inverseEntity="ContoCorrente" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Causale" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="TipoConto" positionX="-54" positionY="9" width="128" height="90"/>
+        <element name="ContoCorrente" positionX="-36" positionY="27" width="128" height="135"/>
+        <element name="CartaCredito" positionX="-18" positionY="72" width="128" height="120"/>
+        <element name="MovimentoConto" positionX="0" positionY="99" width="128" height="135"/>
+        <element name="MovimentoCarta" positionX="18" positionY="135" width="128" height="150"/>
+    </elements>
 </model>

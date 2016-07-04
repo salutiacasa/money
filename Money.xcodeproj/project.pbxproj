@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EA479C51D2ABC3E000C7153 /* ContoCorrente+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479B91D2ABC3E000C7153 /* ContoCorrente+CoreDataProperties.swift */; };
+		0EA479C61D2ABC3E000C7153 /* ContoCorrente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479BA1D2ABC3E000C7153 /* ContoCorrente.swift */; };
+		0EA479C71D2ABC3E000C7153 /* TipoConto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479BB1D2ABC3E000C7153 /* TipoConto+CoreDataProperties.swift */; };
+		0EA479C81D2ABC3E000C7153 /* TipoConto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479BC1D2ABC3E000C7153 /* TipoConto.swift */; };
+		0EA479C91D2ABC3E000C7153 /* MovimentoCarta+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479BD1D2ABC3E000C7153 /* MovimentoCarta+CoreDataProperties.swift */; };
+		0EA479CA1D2ABC3E000C7153 /* MovimentoCarta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479BE1D2ABC3E000C7153 /* MovimentoCarta.swift */; };
+		0EA479CB1D2ABC3E000C7153 /* Casuale+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479BF1D2ABC3E000C7153 /* Casuale+CoreDataProperties.swift */; };
+		0EA479CC1D2ABC3E000C7153 /* Casuale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479C01D2ABC3E000C7153 /* Casuale.swift */; };
+		0EA479CD1D2ABC3E000C7153 /* CartaCredito+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479C11D2ABC3E000C7153 /* CartaCredito+CoreDataProperties.swift */; };
+		0EA479CE1D2ABC3E000C7153 /* CartaCredito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479C21D2ABC3E000C7153 /* CartaCredito.swift */; };
+		0EA479CF1D2ABC3E000C7153 /* MovimentoConto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479C31D2ABC3E000C7153 /* MovimentoConto+CoreDataProperties.swift */; };
+		0EA479D01D2ABC3E000C7153 /* MovimentoConto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479C41D2ABC3E000C7153 /* MovimentoConto.swift */; };
 		A369945A1D1D62F4009F6660 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36994591D1D62F4009F6660 /* AppDelegate.swift */; };
 		A369945C1D1D62F4009F6660 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A369945B1D1D62F4009F6660 /* ViewController.swift */; };
 		A369945F1D1D62F4009F6660 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A369945D1D1D62F4009F6660 /* Main.storyboard */; };
@@ -35,6 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EA479B91D2ABC3E000C7153 /* ContoCorrente+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ContoCorrente+CoreDataProperties.swift"; path = "../ContoCorrente+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0EA479BA1D2ABC3E000C7153 /* ContoCorrente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContoCorrente.swift; path = ../ContoCorrente.swift; sourceTree = "<group>"; };
+		0EA479BB1D2ABC3E000C7153 /* TipoConto+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TipoConto+CoreDataProperties.swift"; path = "../TipoConto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0EA479BC1D2ABC3E000C7153 /* TipoConto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TipoConto.swift; path = ../TipoConto.swift; sourceTree = "<group>"; };
+		0EA479BD1D2ABC3E000C7153 /* MovimentoCarta+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MovimentoCarta+CoreDataProperties.swift"; path = "../MovimentoCarta+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0EA479BE1D2ABC3E000C7153 /* MovimentoCarta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovimentoCarta.swift; path = ../MovimentoCarta.swift; sourceTree = "<group>"; };
+		0EA479BF1D2ABC3E000C7153 /* Casuale+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Casuale+CoreDataProperties.swift"; path = "../Casuale+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0EA479C01D2ABC3E000C7153 /* Casuale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Casuale.swift; path = ../Casuale.swift; sourceTree = "<group>"; };
+		0EA479C11D2ABC3E000C7153 /* CartaCredito+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CartaCredito+CoreDataProperties.swift"; path = "../CartaCredito+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0EA479C21D2ABC3E000C7153 /* CartaCredito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartaCredito.swift; path = ../CartaCredito.swift; sourceTree = "<group>"; };
+		0EA479C31D2ABC3E000C7153 /* MovimentoConto+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MovimentoConto+CoreDataProperties.swift"; path = "../MovimentoConto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0EA479C41D2ABC3E000C7153 /* MovimentoConto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovimentoConto.swift; path = ../MovimentoConto.swift; sourceTree = "<group>"; };
 		A36994561D1D62F4009F6660 /* Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Money.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36994591D1D62F4009F6660 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A369945B1D1D62F4009F6660 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +130,18 @@
 				A36994651D1D62F4009F6660 /* LaunchScreen.storyboard */,
 				A36994681D1D62F4009F6660 /* Info.plist */,
 				A36994601D1D62F4009F6660 /* Money.xcdatamodeld */,
+				0EA479B91D2ABC3E000C7153 /* ContoCorrente+CoreDataProperties.swift */,
+				0EA479BA1D2ABC3E000C7153 /* ContoCorrente.swift */,
+				0EA479BB1D2ABC3E000C7153 /* TipoConto+CoreDataProperties.swift */,
+				0EA479BC1D2ABC3E000C7153 /* TipoConto.swift */,
+				0EA479BD1D2ABC3E000C7153 /* MovimentoCarta+CoreDataProperties.swift */,
+				0EA479BE1D2ABC3E000C7153 /* MovimentoCarta.swift */,
+				0EA479BF1D2ABC3E000C7153 /* Casuale+CoreDataProperties.swift */,
+				0EA479C01D2ABC3E000C7153 /* Casuale.swift */,
+				0EA479C11D2ABC3E000C7153 /* CartaCredito+CoreDataProperties.swift */,
+				0EA479C21D2ABC3E000C7153 /* CartaCredito.swift */,
+				0EA479C31D2ABC3E000C7153 /* MovimentoConto+CoreDataProperties.swift */,
+				0EA479C41D2ABC3E000C7153 /* MovimentoConto.swift */,
 			);
 			path = Money;
 			sourceTree = "<group>";
@@ -259,9 +295,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA479CD1D2ABC3E000C7153 /* CartaCredito+CoreDataProperties.swift in Sources */,
 				A369945C1D1D62F4009F6660 /* ViewController.swift in Sources */,
+				0EA479CF1D2ABC3E000C7153 /* MovimentoConto+CoreDataProperties.swift in Sources */,
+				0EA479C51D2ABC3E000C7153 /* ContoCorrente+CoreDataProperties.swift in Sources */,
+				0EA479CB1D2ABC3E000C7153 /* Casuale+CoreDataProperties.swift in Sources */,
+				0EA479C81D2ABC3E000C7153 /* TipoConto.swift in Sources */,
+				0EA479CA1D2ABC3E000C7153 /* MovimentoCarta.swift in Sources */,
 				A36994621D1D62F4009F6660 /* Money.xcdatamodeld in Sources */,
 				A369945A1D1D62F4009F6660 /* AppDelegate.swift in Sources */,
+				0EA479C61D2ABC3E000C7153 /* ContoCorrente.swift in Sources */,
+				0EA479CE1D2ABC3E000C7153 /* CartaCredito.swift in Sources */,
+				0EA479D01D2ABC3E000C7153 /* MovimentoConto.swift in Sources */,
+				0EA479C91D2ABC3E000C7153 /* MovimentoCarta+CoreDataProperties.swift in Sources */,
+				0EA479C71D2ABC3E000C7153 /* TipoConto+CoreDataProperties.swift in Sources */,
+				0EA479CC1D2ABC3E000C7153 /* Casuale.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +536,7 @@
 				A36994831D1D62F4009F6660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A36994841D1D62F4009F6660 /* Build configuration list for PBXNativeTarget "MoneyTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +545,7 @@
 				A36994861D1D62F4009F6660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A36994871D1D62F4009F6660 /* Build configuration list for PBXNativeTarget "MoneyUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +554,7 @@
 				A36994891D1D62F4009F6660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
